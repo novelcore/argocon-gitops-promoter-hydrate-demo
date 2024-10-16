@@ -46,7 +46,7 @@ metadata:
   name: canary-demo
   namespace: production-use2
 spec:
-  replicas: 3
+  replicas: 4
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -68,7 +68,7 @@ spec:
         environment: production
     spec:
       containers:
-        - image: argoproj/rollouts-demo:blue
+        - image: argoproj/rollouts-demo:green
           imagePullPolicy: Always
           name: canary-demo
           ports:
