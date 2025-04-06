@@ -1,6 +1,6 @@
 {
   "repoURL": "https://github.com/novelcore/argocon-gitops-promoter-hydrate-demo.git",
-  "drySha": "5ba257eeaeacc818ca63d8a8673aeb903756437b",
+  "drySha": "f0c1d8d4d646fbf59edd4daad5445d524c089921",
   "commands": [
     "kustomize build ./user-configuration/staging/integration"
   ]
