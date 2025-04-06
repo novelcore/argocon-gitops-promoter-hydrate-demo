@@ -11,3 +11,41 @@ spec:
   github: {}
   secretRef:
     name: my-auth-promotion
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-auth-promotion
+  namespace: argocd
+type: Opaque
+stringData:
+  appID: "990334"
+  installationID: "54584049"
+  privateKey:  |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEAq10XAbyqGCL7s1CM6HxsaP2qbgfs6l5M1V9qms5KoQTQQyK+
+    u5bCdaRnJXqtB1mEZx4dUhaQnnkW8++sSKhgGd/201N0hUVo+I2eAydfYw5LRmRI
+    7WVwSoO4K0tFZrD85JQyACKerDGuw7jbMl7/Ych4//QsfdmDK1CwmB3HgpkOR3jA
+    wb5A1jscuZD0KX6ZhIyBF1YpRgDjsy3mOBzxBkF85yskry9Dym37qw9v9CSdNUix
+    bfQIOiXqQB0JMhmxmiX8Zqou+to086EikeyjJA/WxdJHjn2IGSfPFxMGl0yd2at5
+    0Zd5zER+z7LuUmCJuXANLMUkCJ277kplILZ3xwIDAQABAoIBAG00nOXResB5AtiK
+    W9IJAPmDtqn6SQQu5l4QOZrAHpUwwRwXt19Ku1BHXihnXn9Rj+w7J8pZcP5dAsCg
+    G7YN/3hd3ylbhOUtj7DeZzVxUPuKb3RDkqofPAlwmdyVUnwYDIIK4zZs2Zu46bv3
+    QVF/cta48EuFKxlklY/0EyZNzAgwQCyZPoPIAq7yKQGaD3DlUfmeYK9pplwVz12+
+    dom8xVk6EyB9FSfDQigqkv6d3Y5r7ppTILmaDV1eSDWNJy0UNM7BjF+wkxrygaBE
+    m2BIXFzvl18AQRE52N8mxud/mPBWrPUNZSSIrnDNOuHhU6uz89m2RLle+WSkAQzO
+    yBxfhXkCgYEA40wqq0R/YVfo4M/emJhz1aARX6bRbGFI20zsccLLn01QS8gXG4YL
+    Jqa8I2SJo9V2AaL7er7N+9aQRM/z8Yyhb8cuVlRof6wb2smiDJFJXMTrM6jLbI3j
+    zesJjW2G9zQcjXDqdXCQ/OYCyjyd8hMSZGTVzmXAq9kBUuZlZ6jw1c0CgYEAwQDA
+    aUxXSLtPoRg1C5OQEKJ4SN9CPWzd9zoqv9gckWPRl4re9+znUlQ0mu4P43i785id
+    3zFfOAESpf83Kt3+dTVNIvP2+SDlo5XCItN+0Y8uOMySo5tXU07lHEnxEniTeJg0
+    6DIirxQ3yisP/6e2QKhym+ZGF/3OWwnLsatJb+MCgYEAiknv9+2f1ljG7ehqlMrE
+    RuexSlHTPq5dxlch0ADlJBHE1aZyMKO4KxbshlgHye74cfx4JnDqH9umQMeIsqCO
+    I9S6Y3nNbkgHVnCwsBbA3LlOJEsBIRWe0My8LhjCMaq56HAXpcYL4GIMtoB01DA4
+    U25qCr4roCJSRN66OXw2ss0CgYBmucGvygRDH/94HOxO5xGs6OzgzIPzMbjK19jd
+    F2fNMrXh1PZsO1m8BjmhpMgsKJzRQQ/2Nc8afeexFrAETvga5m3SBswTOaFAentE
+    EhHT9EOD087Q6eOG4d0sO2bmj+reKxUt6VFwonA3WMhBKMDmlUG7HMt+BYcKCaKz
+    RBnoRQKBgQCGY1D1UaKL06ZinTdHSfXM5tePyUEDa5Fk2LO+b8UvkXjUQUmxaHSf
+    JrtPB2KGeYJqSsmZJXlfthVqcYxNYqI0sHY9t7xoJWCsHu3HvExU4BtQweYc4UuV
+    GZBA13ggThQLweeZ5ApV1ICn9A0jXNfOweKQxL7ibaUA/X+iuyWaGw==
+    -----END RSA PRIVATE KEY-----
