@@ -8,6 +8,6 @@ metadata:
   namespace: argocd
 spec:
   name: argocon-gitops-promoter-hydrate-demo
-  owner: zachaller
+  owner: novelcore
   scmProviderRef:
     name: scmprovider-sample
