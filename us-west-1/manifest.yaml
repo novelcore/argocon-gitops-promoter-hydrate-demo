@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    app.kubernetes.io/instance: production-use2
-  name: production-use2
+    app.kubernetes.io/instance: production-usw1
+  name: production-usw1
 ---
 apiVersion: v1
 kind: Service
@@ -11,9 +11,9 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: production-use2
+    app.kubernetes.io/instance: production-usw1
   name: canary-demo
-  namespace: production-use2
+  namespace: production-usw1
 spec:
   ports:
     - name: http
@@ -29,9 +29,9 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: production-use2
+    app.kubernetes.io/instance: production-usw1
   name: canary-demo-preview
-  namespace: production-use2
+  namespace: production-usw1
 spec:
   ports:
     - name: http
@@ -47,11 +47,11 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: production-use2
-    db-schema: v1.11
+    app.kubernetes.io/instance: production-usw1
+    db-schema: v1.2
     environment: production
   name: canary-demo
-  namespace: production-use2
+  namespace: production-usw1
 spec:
   replicas: 3
   revisionHistoryLimit: 1
