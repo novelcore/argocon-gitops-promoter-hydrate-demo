@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    app.kubernetes.io/instance: integration-staging
-  name: intergration-staging
+    app.kubernetes.io/instance: e2e-staging
+  name: e2e-staging
 ---
 apiVersion: v1
 kind: Service
@@ -11,9 +11,9 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: integration-staging
+    app.kubernetes.io/instance: e2e-staging
   name: canary-demo
-  namespace: intergration-staging
+  namespace: e2e-staging
 spec:
   ports:
     - name: http
@@ -29,9 +29,9 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: integration-staging
+    app.kubernetes.io/instance: e2e-staging
   name: canary-demo-preview
-  namespace: intergration-staging
+  namespace: e2e-staging
 spec:
   ports:
     - name: http
@@ -47,12 +47,13 @@ metadata:
   annotations:
     version: v1.0.119
   labels:
-    app.kubernetes.io/instance: integration-staging
+    app.kubernetes.io/instance: e2e-staging
+    db-schema: v1.4
     environment: staging
   name: canary-demo
-  namespace: intergration-staging
+  namespace: e2e-staging
 spec:
-  replicas: 2
+  replicas: 3
   revisionHistoryLimit: 1
   selector:
     matchLabels:
